@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>PlantUML-lite</Product>
+    <Description>A lightweight .NET entrypoint for PlantUML</Description>
+    <Version>1.2022.6</Version>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <StartupObject>PlantUML.LiteRun</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IKVM" Version="8.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <IkvmReference Include="./plantuml.jar">
+      <AssemblyName>plantuml</AssemblyName>
+      <AssemblyVersion>1.2022.6.0</AssemblyVersion>
+      <Debug>true</Debug>
+    </IkvmReference>
+  </ItemGroup>
+
+</Project>
