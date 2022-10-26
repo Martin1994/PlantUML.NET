@@ -1,0 +1,45 @@
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+  <Application>
+    <Assembly Name="System.Threading">
+      <!-- system -->
+      <Type Name="System.Threading.Interlocked" Dynamic="Required All" />
+    </Assembly>
+    <Assembly Name="IKVM.Java">
+      <!-- java -->
+      <Type Name="java.util.concurrent.ConcurrentHashMap" Dynamic="Required All" />
+      <Type Name="java.security.MessageDigestSpi" Dynamic="Required All" />
+      <Type Name="sun.net.www.protocol.jar.Handler" Dynamic="Required All" />
+      <Type Name="sun.net.www.protocol.file.Handler" Dynamic="Required All" />
+      <Type Name="sun.nio.cs.ext.ExtendedCharsets" Dynamic="Required All" />
+      <Type Name="sun.nio.cs.ISO_8859_1" Dynamic="Required All" />
+      <Type Name="sun.nio.cs.UTF_16BE" Dynamic="Required All" />
+      <Type Name="sun.nio.cs.UTF_16LE" Dynamic="Required All" />
+      <Type Name="sun.nio.cs.UTF_16" Dynamic="Required All" />
+      <Type Name="sun.text.resources.nl.FormatData_nl" Dynamic="Required All" />
+      <Type Name="sun.util.resources.TimeZoneNames" Dynamic="Required All" />
+      <Type Name="sun.security.provider.Sun" Dynamic="Required All" />
+      <Type Name="sun.security.provider.MD5" Dynamic="Required All" />
+      <Type Name="com.sun.org.apache.xerces.internal.impl.dv.dtd.DTDDVFactoryImpl" Dynamic="Required All" />
+      <Type Name="com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl" Dynamic="Required All" />
+      <Type Name="com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl" Dynamic="Required All" />
+      <Type Name="ikvm.internal.ClassLiteral`1[java.io.Serializable]" Dynamic="Required All" />
+      <!-- awt -->
+      <Type Name="sun.font.EAttribute" Dynamic="Required All" />
+      <Type Name="sun.java2d.cmm.lcms.LcmsServiceProvider" Dynamic="Required All" />
+      <Type Name="sun.awt.Win32FontManager" Dynamic="Required All" />
+    </Assembly>
+    <Assembly Name="plantuml">
+      <!-- plantuml -->
+      <Type Name="net.sourceforge.plantuml.graphic.FontStyle" Dynamic="Required All" />
+      <Type Name="net.sourceforge.plantuml.graphic.HorizontalAlignment" Dynamic="Required All" />
+      <Type Name="net.sourceforge.plantuml.cucadiagram.EntityPortion" Dynamic="Required All" />
+      <Type Name="net.sourceforge.plantuml.style.PName" Dynamic="Required All" />
+      <Type Name="net.sourceforge.plantuml.graphic.color.ColorType" Dynamic="Required All" />
+      <Type Name="net.sourceforge.plantuml.sequencediagram.LifeEventType" Dynamic="Required All" />
+    </Assembly>
+    <Assembly Name="plantuml.lite">
+      <!-- app -->
+      <Type Name="ikvm.awt.DummyGraphicsEnvironment" Dynamic="Required All" />
+    </Assembly>
+  </Application>
+</Directives>

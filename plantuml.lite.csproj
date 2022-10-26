@@ -5,11 +5,17 @@
     <Description>A lightweight .NET entrypoint for PlantUML</Description>
     <Version>1.2022.6</Version>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <StartupObject>PlantUML.LiteRun</StartupObject>
+    <StartupObject>WebPlantUml.Program</StartupObject>
+    <PublishAot>true</PublishAot>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
+  <ItemGroup>
+    <RdXmlFile Include="rd.xml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="IKVM" Version="8.2.1" />
